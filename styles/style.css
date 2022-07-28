@@ -1,0 +1,126 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+* p, body p {
+  font-size: 15px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #d6e2f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .card-container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .main-container .card-container {
+    width: 90%;
+  }
+}
+
+.main-container .card-container .card {
+  width: 30%;
+  max-width: 450px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px auto;
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .main-container .card-container .card {
+    width: 50%;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .card-container .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container .card-container .card {
+    width: 100%;
+  }
+}
+
+.main-container .card-container .card .img-container {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main-container .card-container .card .img-container img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.main-container .card-container .card .text-container {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.main-container .card-container .card .text-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f3251;
+}
+
+@media screen and (max-width: 1368px) {
+  .main-container .card-container .card .text-container h1 {
+    font-size: 24px;
+  }
+}
+
+.main-container .card-container .card .text-container p {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 400;
+  color: #7b879d;
+  padding: 0 10%;
+}
+
+@media screen and (max-width: 1368px) {
+  .main-container .card-container .card .text-container p {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container .card-container .card .text-container p {
+    padding: 0;
+  }
+}
+
+.main-container .attribution {
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

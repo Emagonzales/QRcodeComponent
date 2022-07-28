@@ -1,0 +1,110 @@
+//font
+@import url('https://fonts.google.com/specimen/Outfit');
+$font: 'Outfit', sans-serif;
+
+//colors
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+
+    p{
+        font-size: 15px;
+    }
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card-container{
+        width: 80%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        
+        @media screen and (max-width: 500px) {
+            width: 90%;
+        }
+
+        .card{
+            width: 30%;
+            max-width: 450px;
+            background-color: $white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 50px auto;
+
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+
+            @media screen and (max-width: 992px) {
+                width: 50%;
+                max-width: unset;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 60%;
+            }
+
+            
+            @media screen and (max-width: 500px) {
+                width: 100%;
+            }
+
+            .img-container{
+                width: 100%;
+                border-radius: 15px;
+                img{
+                    width: 100%;
+                    border-radius: 15px;
+                }
+            }
+
+            .text-container{
+                margin: 15px 0;
+                text-align: center;
+                h1{
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: $dark-blue;
+
+                    @media screen and (max-width: 1368px) {
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    margin-top: 15px;
+                    font-weight: 400;
+                    color: $grayish-blue;
+                    padding: 0 10%;
+
+                    @media screen and (max-width: 1368px) {
+                        padding: 0 5%;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        padding: 0;
+                    }
+                }                
+            }
+        }
+    }
+
+
+    .attribution{
+        font-size: 12px;
+        text-align: center;
+    }
+}
