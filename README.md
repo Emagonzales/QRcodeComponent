@@ -37,4 +37,4 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Author
 
 - Website - [Emanuela Gonzales](https://emagonzales.netlify.app/)
-- Frontend Mentor - [@emagon](https://www.frontendmentor.io/profile/emagon)
+- Frontend Mentor - [@Emagonzales](https://www.frontendmentor.io/profile/Emagonzales)
